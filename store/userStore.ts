@@ -1,13 +1,13 @@
 import { create } from "zustand";
 
-type UserStore = {
+type UserState = {
   hasFinishedOnboarding: boolean;
-  toggleHadOnboarded: () => void;
+  toggleHasOnboarded: () => void;
 };
 
-export const useUserStore = create<UserStore>((set) => ({
+export const useUserStore = create<UserState>((set) => ({
   hasFinishedOnboarding: false,
-  toggleHadOnboarded: () => {
+  toggleHasOnboarded: () => {
     set((state) => {
       return {
         ...state,
