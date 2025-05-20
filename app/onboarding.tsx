@@ -42,17 +42,18 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     alignItems: "center",
     backgroundColor: theme.colorWhite,
+    paddingHorizontal: 8,
   },
-  heading:{
+  heading: {
     fontSize: 42,
     color: theme.colorWhite,
     fontWeight: "bold",
     marginBottom: 12,
     textAlign: "center",
   },
-  tagline:{
+  tagline: {
     fontSize: 24,
     color: theme.colorWhite,
     textAlign: "center",
-  }
+  },
 });
